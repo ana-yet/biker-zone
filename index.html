@@ -18,10 +18,17 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Styles -->
     <style>
       .font-popping {
         font-family: "Poppins", serif;
+      }
+      .bg-header {
+        background-color: #e76f511a;
+      }
+      .bg-main {
+        background-color: #e76f51;
       }
     </style>
   </head>
@@ -58,7 +65,7 @@
               <li><a>Contract</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">WoW BiKERS</a>
+          <a class="btn btn-ghost text-4xl">WoW BiKERS</a>
         </div>
         <div class="navbar-end">
           <ul class="menu hidden lg::flex menu-horizontal px-1">
@@ -67,14 +74,104 @@
             <li><a>News</a></li>
             <li><a>Contract</a></li>
           </ul>
-          <a class="btn bg-red-500 text-white">Login</a>
+          <a class="btn bg-main text-white">Login</a>
         </div>
-        <!-- <div class="navbar-end">
-          <a class="btn bg-red-500 text-white">Login</a>
-        </div> -->
       </nav>
-    </header>
+      <!-- Carousel -->
+      <div class="carousel h-[700px] w-full bg-header rounded-lg">
+        <!-- slide one -->
+        <div
+          id="slide1"
+          class="flex flex-col lg:flex-row p-3 md:p-24 relative items-center carousel-item"
+        >
+          <!-- Text content -->
+          <div class="flex-1">
+            <h2 class="text-7xl font-extrabold">Ride-on R15 V4 with Smile</h2>
+            <br />
+            <p class="text-xl text-gray-500">
+              Amet minim mollit non deserunt ullamco <br />
+              est sit aliqua dolor do amet sint. Velit officia consequat <br />
+              duis enim velit mollit.
+            </p>
+            <br />
+            <button class="px-6 py-4 bg-main text-white text-2xl rounded-md">
+              Purchase
+            </button>
+          </div>
+          <!-- Image content -->
+          <div class="flex-1 w-full">
+            <img src="./images/slider/bike1.png" class="w-[420px]" />
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- slide two -->
+        <div
+          id="slide2"
+          class="flex flex-col lg:flex-row p-3 md:p-24 relative items-center carousel-item"
+        >
+          <!-- Text content -->
+          <div class="flex-1">
+            <h2 class="text-7xl font-extrabold">Ride-on R15 V4 with Smile</h2>
+            <br />
+            <p class="text-xl text-gray-500">
+              Amet minim mollit non deserunt ullamco <br />
+              est sit aliqua dolor do amet sint. Velit officia consequat <br />
+              duis enim velit mollit.
+            </p>
+            <br />
+            <button class="px-6 py-4 bg-main text-white text-2xl rounded-md">
+              Purchase
+            </button>
+          </div>
+          <!-- Image content -->
+          <div class="flex-1 w-full">
+            <img src="./images/slider/bike2.png" class="w-[420px]" />
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
 
+        <!-- slide three -->
+        <div
+          id="slide3"
+          class="flex flex-col lg:flex-row p-3 md:p-24 relative items-center carousel-item"
+        >
+          <!-- Text content -->
+          <div class="flex-1">
+            <h2 class="text-7xl font-extrabold">Ride-on R15 V4 with Smile</h2>
+            <br />
+            <p class="text-xl text-gray-500">
+              Amet minim mollit non deserunt ullamco <br />
+              est sit aliqua dolor do amet sint. Velit officia consequat <br />
+              duis enim velit mollit.
+            </p>
+            <br />
+            <button class="px-6 py-4 bg-main text-white text-2xl rounded-md">
+              Purchase
+            </button>
+          </div>
+          <!-- Image content -->
+          <div class="flex-1 w-full">
+            <img src="./images/slider/bike3.png" class="w-[420px]" />
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- Main Section -->
     <main></main>
 
